@@ -1,9 +1,9 @@
-package com.chimanos.spacequiz.quiz.handlers;
+package com.chimanos.videogame.quiz.handlers;
 
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.Response;
-import com.chimanos.spacequiz.quiz.model.Constants;
+import com.chimanos.videogame.quiz.model.Constants;
 
 import java.util.Optional;
 

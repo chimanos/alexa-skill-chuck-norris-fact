@@ -1,4 +1,4 @@
-package com.chimanos.spacequiz.quiz.model;
+package com.chimanos.videogame.quiz.model;
 
 public enum StateProperty {
 

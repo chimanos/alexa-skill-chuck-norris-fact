@@ -1,15 +1,15 @@
-package com.chimanos.spacequiz.quiz.handlers;
+package com.chimanos.videogame.quiz.handlers;
 
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.IntentRequest;
 import com.amazon.ask.model.Response;
 import com.amazon.ask.model.Slot;
-import com.chimanos.spacequiz.quiz.model.Attributes;
-import com.chimanos.spacequiz.quiz.model.Constants;
-import com.chimanos.spacequiz.quiz.model.StateProperty;
-import com.chimanos.spacequiz.quiz.model.State;
-import com.chimanos.spacequiz.quiz.util.QuestionUtils;
+import com.chimanos.videogame.quiz.model.Attributes;
+import com.chimanos.videogame.quiz.model.Constants;
+import com.chimanos.videogame.quiz.model.StateProperty;
+import com.chimanos.videogame.quiz.model.State;
+import com.chimanos.videogame.quiz.util.QuestionUtils;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.LinkedHashMap;
@@ -18,7 +18,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Random;
 
-import static com.chimanos.spacequiz.quiz.util.QuestionUtils.getPropertyOfState;
+import static com.chimanos.videogame.quiz.util.QuestionUtils.getPropertyOfState;
 import static com.amazon.ask.request.Predicates.intentName;
 import static com.amazon.ask.request.Predicates.sessionAttribute;
 

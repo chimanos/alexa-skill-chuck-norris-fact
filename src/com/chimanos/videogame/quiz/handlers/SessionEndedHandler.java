@@ -1,4 +1,4 @@
-package com.chimanos.spacequiz.quiz.handlers;
+package com.chimanos.videogame.quiz.handlers;
 
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;

@@ -1,4 +1,4 @@
-package com.chimanos.spacequiz.quiz.model;
+package com.chimanos.videogame.quiz.model;
 
 import java.util.Arrays;
 import java.util.List;
@@ -69,11 +69,11 @@ public class Constants {
     // skill, or when they finish a quiz.
     public static String EXIT_SKILL_MESSAGE = "Merci d'avoir joué au quiz spacial!  Rejouons ensemble bientot!";
 
-    // This is the message a user will hear after they spacequiz (and hear) about a
+    // This is the message a user will hear after they videogame (and hear) about a
     // specific data element.
     public static String REPROMPT_MESSAGE = "Qu'elle autre information voudrais tu sur les planetes, les fusées ou les entreprises du spacial?";
 
-    // This is the message a user will hear when they spacequiz Alexa for help in your
+    // This is the message a user will hear when they videogame Alexa for help in your
     // skill.
     public static String HELP_MESSAGE = "Je connais beaucoup de chose sur l'espace.  Tu peut me poser des questions sur les planetes, les fusées ou les entreprises du spacial, " +
             "et je te dirais ce que je sais.  Tu peut aussi tester tes connaissances dans le spacial en me demandant de commencer un quiz.  Que veut tu faire?";
