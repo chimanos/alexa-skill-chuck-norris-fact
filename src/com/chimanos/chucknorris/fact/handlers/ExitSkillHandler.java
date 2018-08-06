@@ -1,9 +1,9 @@
-package com.chimanos.videogame.quiz.handlers;
+package com.chimanos.chucknorris.fact.handlers;
 
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.Response;
-import com.chimanos.videogame.quiz.model.Constants;
+import com.chimanos.chucknorris.fact.model.Constants;
 
 import java.util.Optional;
 

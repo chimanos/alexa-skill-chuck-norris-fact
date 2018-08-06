@@ -1,4 +1,4 @@
-package com.chimanos.videogame.quiz.handlers;
+package com.chimanos.chucknorris.fact.handlers;
 
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;

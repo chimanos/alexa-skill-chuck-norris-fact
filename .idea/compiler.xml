@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spacequiz" />
+        <module name="chuck-norris-fact" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spacequiz" target="1.8" />
+      <module name="chuck-norris-fact" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package com.chimanos.videogame.quiz.model;
+package com.chimanos.chucknorris.fact.model;
 
 import java.util.Arrays;
 import java.util.List;
@@ -60,23 +60,23 @@ public class Constants {
 
     public static boolean USE_CARDS_FLAG = true;
 
-    public static String WELCOME_MESSAGE = "Bienvenue sur le quiz spacial !  Tu peut me demander n'importe quoi sur les planetes, les fusée et les entreprises du spacial " +
-            "ou tu peut me demander de commencer le quiz. Que veut tu faire?";
+    public static String WELCOME_MESSAGE = "Bienvenue sur le fact spacial !  Tu peut me demander n'importe quoi sur les planetes, les fusée et les entreprises du spacial " +
+            "ou tu peut me demander de commencer le fact. Que veut tu faire?";
 
     public static String START_QUIZ_MESSAGE = "OK.  Je vais te poser 10 question sur l'espace.";
 
     // This is the message a user will hear when they try to cancel or stop the
-    // skill, or when they finish a quiz.
-    public static String EXIT_SKILL_MESSAGE = "Merci d'avoir joué au quiz spacial!  Rejouons ensemble bientot!";
+    // skill, or when they finish a fact.
+    public static String EXIT_SKILL_MESSAGE = "Merci d'avoir joué au fact spacial!  Rejouons ensemble bientot!";
 
-    // This is the message a user will hear after they videogame (and hear) about a
+    // This is the message a user will hear after they chucknorris (and hear) about a
     // specific data element.
     public static String REPROMPT_MESSAGE = "Qu'elle autre information voudrais tu sur les planetes, les fusées ou les entreprises du spacial?";
 
-    // This is the message a user will hear when they videogame Alexa for help in your
+    // This is the message a user will hear when they chucknorris Alexa for help in your
     // skill.
     public static String HELP_MESSAGE = "Je connais beaucoup de chose sur l'espace.  Tu peut me poser des questions sur les planetes, les fusées ou les entreprises du spacial, " +
-            "et je te dirais ce que je sais.  Tu peut aussi tester tes connaissances dans le spacial en me demandant de commencer un quiz.  Que veut tu faire?";
+            "et je te dirais ce que je sais.  Tu peut aussi tester tes connaissances dans le spacial en me demandant de commencer un fact.  Que veut tu faire?";
 
     public static List<String> CORRECT_RESPONSES = Arrays.asList("Bravo", "Cool, bonne réponse", "Génial", "Félicitation", "Continue comme ça");
 

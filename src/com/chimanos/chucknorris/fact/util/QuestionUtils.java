@@ -1,18 +1,18 @@
-package com.chimanos.videogame.quiz.util;
+package com.chimanos.chucknorris.fact.util;
 
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.model.Response;
 import com.amazon.ask.model.Slot;
-import com.chimanos.videogame.quiz.model.Attributes;
-import com.chimanos.videogame.quiz.model.StateProperty;
-import com.chimanos.videogame.quiz.model.State;
+import com.chimanos.chucknorris.fact.model.Attributes;
+import com.chimanos.chucknorris.fact.model.StateProperty;
+import com.chimanos.chucknorris.fact.model.State;
 
 import java.util.Map;
 import java.util.Optional;
 import java.util.Random;
 
-import static com.chimanos.videogame.quiz.model.Constants.START_QUIZ_MESSAGE;
-import static com.chimanos.videogame.quiz.model.Constants.STATES;
+import static com.chimanos.chucknorris.fact.model.Constants.START_QUIZ_MESSAGE;
+import static com.chimanos.chucknorris.fact.model.Constants.STATES;
 
 public class QuestionUtils {
 

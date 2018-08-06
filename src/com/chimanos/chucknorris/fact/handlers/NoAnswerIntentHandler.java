@@ -1,18 +1,18 @@
-package com.chimanos.videogame.quiz.handlers;
+package com.chimanos.chucknorris.fact.handlers;
 
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.IntentRequest;
 import com.amazon.ask.model.Response;
 import com.amazon.ask.model.ui.Image;
-import com.chimanos.videogame.quiz.model.Attributes;
-import com.chimanos.videogame.quiz.model.Constants;
-import com.chimanos.videogame.quiz.model.State;
+import com.chimanos.chucknorris.fact.model.Attributes;
+import com.chimanos.chucknorris.fact.model.Constants;
+import com.chimanos.chucknorris.fact.model.State;
 
 import java.util.Map;
 import java.util.Optional;
 
-import static com.chimanos.videogame.quiz.util.QuestionUtils.getState;
+import static com.chimanos.chucknorris.fact.util.QuestionUtils.getState;
 import static com.amazon.ask.request.Predicates.intentName;
 import static com.amazon.ask.request.Predicates.sessionAttribute;
 
@@ -76,11 +76,11 @@ public class NoAnswerIntentHandler implements RequestHandler {
     }
 
     private String getSmallImage(State state) {
-        return "https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/state_flag/720x400/" + state.getAbbreviation() + "._TTH_.png";
+        return "https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact-game/state_flag/720x400/" + state.getAbbreviation() + "._TTH_.png";
     }
 
     private String getLargeImage(State state) {
-        return "https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/state_flag/1200x800/" + state.getAbbreviation() + "._TTH_.png";
+        return "https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact-game/state_flag/1200x800/" + state.getAbbreviation() + "._TTH_.png";
     }
 
 }

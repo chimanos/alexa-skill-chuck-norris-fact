@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>video-game-quiz</groupId>
-  <artifactId>videogamequiz</artifactId>
+  <groupId>chuck-norris-fact</groupId>
+  <artifactId>chucknorrisfact</artifactId>
   <packaging>jar</packaging>
   <version>1.0</version>
-  <name>video-game-quiz</name>
-  <url>https://github.com/chimanos/alexa-skill-video-game-quiz</url>
+  <name>chuck-norris-fact</name>
+  <url>https://github.com/chimanos/alexa-skill-chuck-norris-fact</url>
   <licenses>
     <license>
       <name>The Apache License, Version 2.0</name>
@@ -22,9 +22,9 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:https://github.com/chimanos/alexa-skill-video-game-quiz.git</connection>
-    <developerConnection>scm:git:https://github.com/chimanos/alexa-skill-video-game-quiz.git</developerConnection>
-    <url>https://github.com/chimanos/alexa-skill-video-game-quiz.git</url>
+    <connection>scm:git:https://github.com/chimanos/alexa-skill-chuck-norris-fact.git</connection>
+    <developerConnection>scm:git:https://github.com/chimanos/alexa-skill-chuck-norris-fact.git</developerConnection>
+    <url>https://github.com/chimanos/alexa-skill-chuck-norris-fact.git</url>
   </scm>
 
   <dependencies>

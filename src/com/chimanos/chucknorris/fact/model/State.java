@@ -1,4 +1,4 @@
-package com.chimanos.videogame.quiz.model;
+package com.chimanos.chucknorris.fact.model;
 
 public class State {
 
