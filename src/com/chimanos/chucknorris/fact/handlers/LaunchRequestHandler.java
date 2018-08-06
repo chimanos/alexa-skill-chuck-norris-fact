@@ -22,7 +22,7 @@ public class LaunchRequestHandler implements RequestHandler {
     @Override
     public Optional<Response> handle(HandlerInput input) {
         Map<String, Object> sessionAttributes = input.getAttributesManager().getSessionAttributes();
-        sessionAttributes.put(Attributes.STATE_KEY, Attributes.START_STATE);
+        sessionAttributes.put(Attributes.FACT_KEY, Attributes.START_FACT);
         return input.getResponseBuilder()
                 .withSpeech(Constants.WELCOME_MESSAGE)
                 .withReprompt(Constants.HELP_MESSAGE)

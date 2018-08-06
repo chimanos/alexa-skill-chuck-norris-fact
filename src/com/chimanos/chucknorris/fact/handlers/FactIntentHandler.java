@@ -4,7 +4,8 @@ import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.Response;
 import com.chimanos.chucknorris.fact.model.Attributes;
-import com.chimanos.chucknorris.fact.util.QuestionUtils;
+import com.chimanos.chucknorris.fact.model.Constants;
+import com.chimanos.chucknorris.fact.util.FactsUtils;
 
 import java.util.Map;
 import java.util.Optional;
@@ -12,23 +13,22 @@ import java.util.Optional;
 import static com.amazon.ask.request.Predicates.intentName;
 import static com.amazon.ask.request.Predicates.sessionAttribute;
 
-public class QuizAndStartOverIntentHandler implements RequestHandler {
+public class FactIntentHandler implements RequestHandler {
 
     @Override
     public boolean canHandle(HandlerInput input) {
-        return input.matches(intentName("QuizIntent").and(sessionAttribute(Attributes.STATE_KEY, Attributes.QUIZ_STATE).negate()))
-                || input.matches(intentName("AMAZON.StartOverIntent"));
+        return input.matches(intentName("FactIntent").and(sessionAttribute(Attributes.FACT_KEY, Attributes.START_FACT)));
     }
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
         Map<String, Object> sessionAttributes = input.getAttributesManager().getSessionAttributes();
-        sessionAttributes.put(Attributes.STATE_KEY, Attributes.QUIZ_STATE);
-        sessionAttributes.put(Attributes.RESPONSE_KEY, "");
-        sessionAttributes.put(Attributes.COUNTER_KEY, 0);
-        sessionAttributes.put(Attributes.QUIZ_SCORE_KEY, 0);
+        sessionAttributes.put(Attributes.FACT_KEY, Attributes.START_FACT);
 
-        return QuestionUtils.generateQuestion(input);
+        return input.getResponseBuilder()
+                .withSpeech(FactsUtils.getRandomFact(input))
+                .withReprompt(Constants.REPROMPT_MESSAGE)
+                .withShouldEndSession(false)
+                .build();
     }
-
 }

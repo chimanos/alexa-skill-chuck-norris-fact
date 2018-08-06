@@ -1,4 +1,4 @@
-# Alexa Skill Video Game Quiz
+# Alexa Skill Chuck Norris facts
 This is a sample quiz skill about Chuck Noris facts in java for Amazon echo.
 This project is based on the sample project of Amazon: [Here](https://github.com/alexa/skill-sample-java-quiz-game)
 

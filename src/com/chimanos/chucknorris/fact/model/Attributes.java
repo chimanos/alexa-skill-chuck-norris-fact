@@ -2,14 +2,9 @@ package com.chimanos.chucknorris.fact.model;
 
 public final class Attributes {
 
-    public static final String STATE_KEY = "state";
-    public static final String QUIZ_ITEM_KEY = "quizitem";
-    public static final String QUIZ_SCORE_KEY = "quizscore";
-    public static final String QUIZ_PROPERTY_KEY = "quizproperty";
-    public static final String COUNTER_KEY = "counter";
-    public static final String RESPONSE_KEY = "response";
+    public static final String FACT_KEY = "fact";
+    public static final String FACT_ITEM_KEY = "factitem";
 
-    public static final String START_STATE = "_START";
-    public static final String QUIZ_STATE = "_QUIZ";
+    public static final String START_FACT = "_START";
 
 }

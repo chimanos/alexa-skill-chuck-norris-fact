@@ -4,9 +4,6 @@ import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.Response;
 import com.chimanos.chucknorris.fact.model.Attributes;
-import com.chimanos.chucknorris.fact.model.StateProperty;
-import com.chimanos.chucknorris.fact.model.State;
-import com.chimanos.chucknorris.fact.util.QuestionUtils;
 
 import java.util.Map;
 import java.util.Optional;
@@ -18,20 +15,18 @@ public class RepeatIntentHandler implements RequestHandler {
 
     @Override
     public boolean canHandle(HandlerInput input) {
-        return input.matches(intentName("AMAZON.RepeatIntent").and(sessionAttribute(Attributes.STATE_KEY, Attributes.QUIZ_STATE)));
+        return input.matches(intentName("AMAZON.RepeatIntent").and(sessionAttribute(Attributes.FACT_KEY, Attributes.START_FACT)));
     }
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
         Map<String, Object> sessionAttributes = input.getAttributesManager().getSessionAttributes();
-        int counter = (int) sessionAttributes.get(Attributes.COUNTER_KEY);
-        StateProperty stateProperty = (StateProperty) sessionAttributes.get(Attributes.QUIZ_PROPERTY_KEY);
-        State state = (State) sessionAttributes.get(Attributes.QUIZ_ITEM_KEY);
 
-        String question = QuestionUtils.getQuestionText(counter, stateProperty, state);
+        String fact = (String) sessionAttributes.get(Attributes.FACT_ITEM_KEY);
+
         return input.getResponseBuilder()
-                .withSpeech(question)
-                .withReprompt(question)
+                .withSpeech(fact)
+                .withReprompt(fact)
                 .withShouldEndSession(false)
                 .build();
     }
