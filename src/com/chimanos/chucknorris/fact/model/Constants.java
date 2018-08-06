@@ -10,8 +10,6 @@ public class Constants {
             "Test 2"
     );
 
-    public static boolean USE_CARDS_FLAG = true;
-
     public static String WELCOME_MESSAGE = "Bienvenue sur le skill de facts sur chuck norris ! Tu peut me demander de te raconter une fact sur lui !";
 
     // This is the message a user will hear when they try to cancel or stop the

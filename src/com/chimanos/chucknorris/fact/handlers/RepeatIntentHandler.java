@@ -4,6 +4,7 @@ import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.Response;
 import com.chimanos.chucknorris.fact.model.Attributes;
+import com.chimanos.chucknorris.fact.model.Constants;
 
 import java.util.Map;
 import java.util.Optional;
@@ -24,11 +25,19 @@ public class RepeatIntentHandler implements RequestHandler {
 
         String fact = (String) sessionAttributes.get(Attributes.FACT_ITEM_KEY);
 
-        return input.getResponseBuilder()
-                .withSpeech(fact)
-                .withReprompt(fact)
-                .withShouldEndSession(false)
-                .build();
+        if(fact == null || fact.equals("")) {
+            return input.getResponseBuilder()
+                    .withSpeech(Constants.REPROMPT_MESSAGE)
+                    .withReprompt(Constants.REPROMPT_MESSAGE)
+                    .withShouldEndSession(false)
+                    .build();
+        } else {
+            return input.getResponseBuilder()
+                    .withSpeech(fact)
+                    .withReprompt(fact)
+                    .withShouldEndSession(false)
+                    .build();
+        }
     }
 
 }
