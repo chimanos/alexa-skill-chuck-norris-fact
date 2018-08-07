@@ -1,7 +1,13 @@
 # Compiled class file
 *.class
 
+# IntellIJ files
+.idea/
 *.idea
+*.iml
+
+# Build files
+target/
 
 # Log file
 *.log
