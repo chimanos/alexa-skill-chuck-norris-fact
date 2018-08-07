@@ -1,0 +1,79 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "donne moi des facts sur chuck norris",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StartOverIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": [
+                        "je n'ai pas compris",
+                        "repete"
+                    ]
+                },
+                {
+                    "name": "FactIntent",
+                    "slots": [
+                        {
+                            "name": "Name",
+                            "type": "CHUCK_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "{Name}",
+                        "parle moi de {Name}",
+                        "donne moi une fact sur {Name}",
+                        "tu connais {Name}",
+                        "fact {Name}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "CHUCK_NAME",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "chuck"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "norris"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chuck norris"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "norris chuck"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
