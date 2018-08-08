@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "donne moi des facts sur chuck norris",
+            "invocationName": "fun facts Chuck Norris",
             "intents": [
                 {
                     "name": "AMAZON.CancelIntent",

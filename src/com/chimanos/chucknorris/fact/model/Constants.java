@@ -573,7 +573,7 @@ public class Constants {
             "Le secret de la richesse de Bill Gates? une photo dédicacée de Chuck Norris mise aux enchères."
     );
 
-    public static String WELCOME_MESSAGE = "Bienvenue sur le skill de fun facts sur chuck norris ! Tu peut me demander de te raconter une fact sur lui !";
+    public static String WELCOME_MESSAGE = "Bienvenue sur la skill fun facts Chuck Norris ! Tu peux me demander de te raconter un fact sur lui !";
 
     // This is the message a user will hear when they try to cancel or stop the
     // skill, or when they finish a fact.
