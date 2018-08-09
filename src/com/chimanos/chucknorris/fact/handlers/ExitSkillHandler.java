@@ -14,7 +14,8 @@ public class ExitSkillHandler implements RequestHandler {
     public boolean canHandle(HandlerInput input) {
         return input.matches(intentName("AMAZON.StopIntent")
                 .or(intentName("AMAZON.PauseIntent")
-                .or(intentName("AMAZON.CancelIntent"))));
+                .or(intentName("AMAZON.CancelIntent")
+                .or(intentName("AMAZON.NoIntent")))));
     }
 
     public Optional<Response> handle(HandlerInput input) {
