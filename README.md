@@ -13,7 +13,7 @@ For the step with the JSON config file you can use the [Interaction model here](
 
 ## Step 2
 
-For send the code too the lambda function in Amazon WS you can clone en build the project here.
+For send the code too the lambda function in Amazon WS you can clone and build the project here.
 
 Use this command line for build the project.
 
