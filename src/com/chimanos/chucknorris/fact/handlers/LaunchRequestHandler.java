@@ -6,6 +6,7 @@ import com.amazon.ask.model.LaunchRequest;
 import com.amazon.ask.model.Response;
 import com.chimanos.chucknorris.fact.model.Attributes;
 import com.chimanos.chucknorris.fact.model.Constants;
+import com.chimanos.chucknorris.fact.util.FactsUtils;
 
 import java.util.Map;
 import java.util.Optional;
@@ -23,11 +24,7 @@ public class LaunchRequestHandler implements RequestHandler {
     public Optional<Response> handle(HandlerInput input) {
         Map<String, Object> sessionAttributes = input.getAttributesManager().getSessionAttributes();
         sessionAttributes.put(Attributes.FACT_KEY, Attributes.START_FACT);
-        return input.getResponseBuilder()
-                .withSpeech(Constants.WELCOME_MESSAGE)
-                .withReprompt(Constants.HELP_MESSAGE)
-                .withShouldEndSession(false)
-                .build();
+        return FactsUtils.makeMessage(Constants.WELCOME_MESSAGE, Constants.HELP_MESSAGE, "Bonjour", Constants.WELCOME_MESSAGE_SMALL, input, false);
     }
 
 }

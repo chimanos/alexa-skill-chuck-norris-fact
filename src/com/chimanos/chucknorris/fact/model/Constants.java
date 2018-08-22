@@ -573,7 +573,10 @@ public class Constants {
             "Le secret de la richesse de Bill Gates? une photo dédicacée de Chuck Norris mise aux enchères."
     );
 
+    public static String SKILL_TITLE = "Chuck Fun Facts";
+
     public static String WELCOME_MESSAGE = "Bienvenue sur la skill Chuck Fun Facts ! Tu peux me demander de te raconter un fact sur lui !";
+    public static String WELCOME_MESSAGE_SMALL = "Bienvenue sur la skill Chuck Fun Facts !";
 
     // This is the message a user will hear when they try to cancel or stop the
     // skill, or when they finish a fact.
@@ -581,9 +584,10 @@ public class Constants {
 
     // This is the message a user will hear after they chucknorris (and hear) about a
     // specific data element.
-    public static String REPROMPT_MESSAGE = "Tu voudrais que je te raconte un fact sur chuck norris ?";
+    public static String REPROMPT_MESSAGE = "Tu voudrais que je te raconte un fact sur Chuck Norris ?";
 
     // This is the message a user will hear when they chucknorris Alexa for help in your
     // skill.
     public static String HELP_MESSAGE = "Je connais beaucoup de facts sur chuck norris ! Tu veut que je t'en raconte une ?";
+    public static String HELP_MESSAGE_SMALL = "Je peut te raconter un fact sur Chuck Norris.";
 }

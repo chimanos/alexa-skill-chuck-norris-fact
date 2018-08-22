@@ -4,6 +4,7 @@ import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.Response;
 import com.chimanos.chucknorris.fact.model.Constants;
+import com.chimanos.chucknorris.fact.util.FactsUtils;
 
 import java.util.Optional;
 
@@ -19,7 +20,7 @@ public class ExitSkillHandler implements RequestHandler {
     }
 
     public Optional<Response> handle(HandlerInput input) {
-        return input.getResponseBuilder().withSpeech(Constants.EXIT_SKILL_MESSAGE).build();
+        return FactsUtils.makeMessage(Constants.EXIT_SKILL_MESSAGE, null, "Au revoir", Constants.EXIT_SKILL_MESSAGE, input, true);
     }
 
 }

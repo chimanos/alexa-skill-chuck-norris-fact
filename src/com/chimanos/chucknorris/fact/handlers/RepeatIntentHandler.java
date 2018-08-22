@@ -5,9 +5,11 @@ import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.Response;
 import com.chimanos.chucknorris.fact.model.Attributes;
 import com.chimanos.chucknorris.fact.model.Constants;
+import com.chimanos.chucknorris.fact.util.FactsUtils;
 
 import java.util.Map;
 import java.util.Optional;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 import static com.amazon.ask.request.Predicates.intentName;
 import static com.amazon.ask.request.Predicates.sessionAttribute;
@@ -26,17 +28,9 @@ public class RepeatIntentHandler implements RequestHandler {
         String fact = (String) sessionAttributes.get(Attributes.FACT_ITEM_KEY);
 
         if(fact == null || fact.equals("")) {
-            return input.getResponseBuilder()
-                    .withSpeech(Constants.REPROMPT_MESSAGE)
-                    .withReprompt(Constants.REPROMPT_MESSAGE)
-                    .withShouldEndSession(false)
-                    .build();
+            return FactsUtils.makeMessage(Constants.REPROMPT_MESSAGE, Constants.REPROMPT_MESSAGE, "J'ai dit", Constants.REPROMPT_MESSAGE, input, false);
         } else {
-            return input.getResponseBuilder()
-                    .withSpeech(fact)
-                    .withReprompt(fact)
-                    .withShouldEndSession(false)
-                    .build();
+            return FactsUtils.makeMessage(fact, fact, "J'ai dit", fact, input, false);
         }
     }
 

@@ -10,7 +10,7 @@ public class ChuckNorrisFactSkillStreamHandler extends SkillStreamHandler {
         super(Skills.standard()
                 .addRequestHandlers(new LaunchRequestHandler(), new FactIntentHandler(),
                              new RepeatIntentHandler(), new HelpIntentHandler(),
-                             new ExitSkillHandler(), new SessionEndedHandler(), new YesIntentHandler())
+                             new ExitSkillHandler(), new SessionEndedHandler(), new IntentRequestHandler())
                 .build());
     }
 
